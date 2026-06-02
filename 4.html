@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        /* Header */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Layout container */
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 250px;
+            background: #34495e;
+            color: white;
+            padding: 20px;
+        }
+
+       
+        .sidebar li {
+            margin: 15px 0;
+        }
+
+        /* Main content */
+        .content {
+            flex: 1;
+            padding: 20px;
+            background: #ecf0f1;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        /* Mobile View */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                display: none; /* hide sidebar */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Student Management Dashboard</h1>
+    </header>
+
+    <div class="container">
+
+        <aside class="sidebar">
+            <h3>Menu</h3>
+            
+                <li>Dashboard</li>
+                <li>Students</li>
+                <li>Attendance</li>
+                <li>Settings</li>
+            
+        </aside>
+
+        <main class="content">
+            <h2>Welcome Admin</h2>
+
+            <div class="card">Total Students: 120</div>
+            <div class="card">Present Today: 110</div>
+            <div class="card">Absent Today: 10</div>
+        </main>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form{
+            border-radius:15px;
+            width:300px;
+            border:2px;
+            padding :10px;
+            margin: 100px auto;
+         
+
+        }
+        button:hover{
+            transform: scale(0.1);
+            background-color:blue;
+        }
+        @media (max-width:648px){
+            .form{
+
+            width:90%;
+        }
+    }
+     
+    </style>
+</head>
+<body>
+    
+    <div class="form">
+         <h1>Login Form</h1>
+        <label for="UserName">UserName</label>
+        <input type="text" placeholder="Username" autofocus required><br><br>
+        <label for="Password">Password</label>
+        <input type="password" placeholder="password" required><br><br>
+        <button>Login</button>
+    </div>
+</body>
+</html>

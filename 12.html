@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bouncing Text</title>
+    <style>
+body{
+    display:flex;
+    justify-content: center;
+}
+        .signal{
+            width: 120px;
+            background: black;
+            padding:15px;
+            
+        }
+        .signal div {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: gray;
+            margin: 10px auto;
+        }
+       
+        .red{
+            animation:redlight 6s infinite;
+        }
+          .yellow{
+            animation:yellowlight 6s infinite;
+        }
+          .green{
+            animation:greenlight 6s infinite;
+        }
+        @keyframes redlight{
+            0%,33%{
+              background-color: red;
+            }
+        34%,100%{
+            background-color: gray;
+
+        }}
+        @keyframes yellowlight{
+            34%,66%{
+                background-color: yellow;
+            }
+        0%,33%,67%,100%{
+            background-color: gray;
+        }}
+        @keyframes greenlight{
+            67%,100%{
+                background-color: green;
+            }
+        0%,66%{
+            background-color: gray;
+        }}
+
+    </style>
+</head>
+<body>
+
+<div class="signal">
+    <div class="red"></div>
+    <div class="yellow"></div>
+    <div class="green"></div>
+</div>
+
+</body>
+</html>

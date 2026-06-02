@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            border-radius: 3px;
+            padding:10px;
+            box-shadow:0px,4px,8px rgb(170, 148, 148);
+            text-align: center;
+        }
+     img:hover{
+       transform: scale(1.1); 
+     }
+     img{
+        transition:transform 0.3s ease;
+    max-width:100%;
+    height:auto;
+      }
+    button:hover{
+        background-color: rgb(115, 115, 168);
+    transition: background-color 0.3s ease;
+}
+     body{
+        justify-content:center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      
+     }
+        @media (max-width: 480px){
+        .card{
+            width:90%;
+        }
+    }
+    </style>
+</head>
+<body>
+   <h1>Product </h1> 
+   <div class="card">
+   <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcT1QAZiHTNXEpYKY0DxDwum793LMWnmz34IUHVnH3OSX70RN6gmbwcG1b3to9O7ZTAO9T9a7_Zfv7jORIWgTIT-QdA1vIFJd0uHRsnAx-pMcJIaMK8e8luIUPQf71myVXV5vmbFaw&usqp=CAc">
+   <p>Name:Skin Defence</p>
+    <p style="color:green";>Price:569.66</p>
+    <Button type="button">Buy Now</Button>
+    </div>
+</body>
+</html>
